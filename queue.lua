@@ -29,7 +29,7 @@ function fifo.pop ()
 		error("queu is empty")
 	end
 	local value = fifo.q[fifo.first]
-	fifo.q[first] = nil	-- to allow garbage collection
+	fifo.q[fifo.first] = nil	-- to allow garbage collection
 	fifo.first = fifo.first + 1
 	return value
 end
